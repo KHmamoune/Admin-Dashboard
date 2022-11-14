@@ -1,0 +1,97 @@
+body {
+    background-color: #E2E8F0;
+    margin: 0;
+    display: flex;
+}
+
+input {
+    background-color: #E2E8F0;
+    border-radius: 18px;
+    border: 0;
+    width: 40vw;
+    height: 30px;
+    margin: 20px;
+}
+
+button {
+    background-color: #1992D4;
+    color: white;
+    width: 6vw;
+    height: 30px;
+    margin-inline: 1vw;
+    border: 0;
+    border-radius: 20px;
+}
+
+.board {
+    margin-inline: 2vw;
+}
+
+.header {
+    background-color: white;
+    height: 150px;
+    width: 79vw;
+    display: flex;
+}
+
+.bar {
+    background-color: #1992D4;
+    font-size: 20px;
+    padding-left: 3vw;
+    padding-top: 5vh;
+    color: white;
+    width: 18vw;
+    height: 95vh;
+}
+
+.side {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.projects > div {
+    background-color: white;
+    word-wrap: break-word;
+    padding: 2vh 2vw;
+    width: 20vw;
+    height: 18vh;
+    border-radius: 10px;
+    border-left: 8px solid #F0B429;
+}
+
+.anounce {
+    background-color: white;
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 15px;
+    width: 20vw;
+}
+
+.anounce > div {
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.anounce > div > p {
+    margin: 8px;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.trending > div > p {
+    margin: 8px;
+}
+
+.main {
+    display: flex;
+}
