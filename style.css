@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto';
+}
+
 body {
     background-color: #E2E8F0;
     margin: 0;
@@ -15,6 +21,7 @@ input {
 
 button {
     background-color: #1992D4;
+    font-weight: bold;
     color: white;
     width: 6vw;
     height: 30px;
@@ -23,15 +30,64 @@ button {
     border-radius: 20px;
 }
 
+p {
+    font-weight: bold;
+}
+
 .board {
     margin-inline: 2vw;
 }
 
 .header {
     background-color: white;
-    height: 150px;
+    height: 145px;
     width: 79vw;
     display: flex;
+}
+
+.header > div > div:nth-child(2) {
+    display: flex;
+}
+
+.header > div:nth-of-type(2) > div {
+    margin: 20px;
+    display: flex;
+    align-items: center
+}
+
+.header > div:nth-of-type(2) > div > p {
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo{
+    display: flex;
+    align-items: center;
+}
+
+.main-logo > img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+
+.logo {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+
+.side {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px;
+    margin-top: 50px;
 }
 
 .bar {
@@ -42,13 +98,6 @@ button {
     color: white;
     width: 18vw;
     height: 95vh;
-}
-
-.side {
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 15px;
-    margin-top: 50px;
 }
 
 .projects {
@@ -67,6 +116,21 @@ button {
     border-left: 8px solid #F0B429;
 }
 
+.projects > div > div {
+    display: flex;
+    justify-content: end;
+}
+
+.projects > div > p:first-of-type {
+    font-size: 20px;
+    margin: 0;
+}
+
+.projects > div > p:nth-of-type(2) {
+    color: rgb(168, 168, 168);
+    margin: 0;
+}
+
 .anounce {
     background-color: white;
     word-wrap: break-word;
@@ -77,19 +141,66 @@ button {
 
 .anounce > div {
     border-bottom: 1px solid #E2E8F0;
+    padding-inline: 20px;
 }
 
 .anounce > div > p {
     margin: 8px;
 }
 
+.anounce > div > p:first-of-type {
+    font-size: 18px;
+    margin: 0;
+}
+
+.anounce > div > p:nth-of-type(2) {
+    color: rgb(168, 168, 168);
+    padding-bottom: 25px;
+    margin: 0;
+}
+
 .trending {
     background-color: white;
     border-radius: 15px;
+    padding: 10px;
 }
 
-.trending > div > p {
-    margin: 8px;
+.trending > div {
+    display: flex;
+    align-content: center;
+    margin-block: 5px;
+}
+
+.trending > div > div > p {
+    margin: 0px;
+    font-size: 16px;
+}
+
+.trending > div > div > p:nth-of-type(2) {
+    color: rgb(168, 168, 168);
+    margin: 0;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    margin-inline: 10px;
+}
+
+.account {
+    height: 40px;
+    width: 40px;
+    margin-inline: 20px;
+}
+
+.account + div > p {
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+}
+
+.account + div > p:first-of-type {
+    font-size: 14px;
 }
 
 .main {
